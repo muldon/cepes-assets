@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cepes-assets – Image Repository</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #333;
+    }
+    h1 { color: #2C5F8A; }
+    h2 { color: #4A90D9; border-bottom: 2px solid #4A90D9; padding-bottom: 6px; }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      margin-top: 16px;
+    }
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 16px;
+      background: #f9f9f9;
+      text-align: center;
+      min-width: 180px;
+    }
+    .card img { display: block; margin: 0 auto 10px; }
+    .card code {
+      font-size: 12px;
+      word-break: break-all;
+      color: #555;
+    }
+    pre {
+      background: #f0f4f8;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 14px;
+      overflow-x: auto;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>cepes-assets</h1>
+  <p>A simple image repository. Images are served via GitHub raw content URLs and can be embedded in any HTML page using the <code>&lt;img&gt;</code> tag.</p>
+
+  <h2>Icons</h2>
+  <div class="gallery">
+    <div class="card">
+      <img src="images/icons/sample-icon.svg" alt="Sample Icon" width="64" height="64">
+      <code>images/icons/sample-icon.svg</code>
+    </div>
+  </div>
+
+  <h2>Logos</h2>
+  <div class="gallery">
+    <div class="card">
+      <img src="images/logos/sample-logo.svg" alt="Sample Logo" width="200" height="60">
+      <code>images/logos/sample-logo.svg</code>
+    </div>
+  </div>
+
+  <h2>Backgrounds</h2>
+  <div class="gallery">
+    <div class="card">
+      <img src="images/backgrounds/sample-background.svg" alt="Sample Background" width="320" height="160">
+      <code>images/backgrounds/sample-background.svg</code>
+    </div>
+  </div>
+
+  <h2>Usage Example</h2>
+  <pre><code>&lt;!-- Using a raw GitHub URL (works from any webpage) --&gt;
+&lt;img src="https://raw.githubusercontent.com/muldon/cepes-assets/main/images/icons/sample-icon.svg"
+     alt="Sample Icon" width="64" height="64"&gt;
+
+&lt;!-- Using a relative path (works from within this repo's GitHub Pages) --&gt;
+&lt;img src="images/logos/sample-logo.svg" alt="Sample Logo" width="200" height="60"&gt;</code></pre>
+
+</body>
+</html>
